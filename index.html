@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<title>CryptoCow</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Philosopher">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/material-components-web.min.css">
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+<meta property="description" content="區塊牛：牛有四個胃，區塊牛也有。為了幫你消化難解的區塊鏈新知而生。是為消化系區塊鏈資訊共筆平台。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CryptoCow：區塊牛">
+<meta property="og:url" content="https://cryptocow.app/">
+<meta property="og:image" content="https://cryptocow.app/assets/cow-1.png">
+<meta property="og:description" content="區塊牛：牛有四個胃，區塊牛也有。為了幫你消化難解的區塊鏈新知而生。是為消化系區塊鏈資訊共筆平台。">
+<meta property="fb:app_id" content="444583839381206">
+</head>
+
+<body class="mdc-typography loading">
+<aside class="mdc-drawer mdc-drawer--modal mdc-typography">
+  <header class="mdc-drawer__header">
+    <div class="mdc-drawer__header-content">
+      <span id="appTitle" class="mdc-drawer__title mdc-typography--headline4">CryptoCow</span>
+    </div>
+  </header>
+  <div class="mdc-drawer__content">
+    <div class="mdc-list-group">
+      <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list">
+        <a id="menuBuy" class="mdc-list-item" href="#" tabindex="0">
+          <span class="material-icons mdc-list-item__graphic" aria-hidden="true">add_shopping_cart</span>
+          <span class="mdc-list-item__text --align-self-center">
+            <span class="mdc-list-item__primary-text">買牛牛</span>
+            <span class="mdc-list-item__secondary-text"></span>
+          </span>
+        </a>
+        <a id="menuSell" class="mdc-list-item" href="#">
+          <span class="material-icons mdc-list-item__graphic" aria-hidden="true">remove_shopping_cart</span>
+          <span class="mdc-list-item__text --align-self-center">
+            <span class="mdc-list-item__primary-text">賣牛牛</span>
+            <span class="mdc-list-item__secondary-text"></span>
+          </span>
+        </a>
+        <a id="menuTransfer" class="mdc-list-item" href="#">
+          <span class="material-icons mdc-list-item__graphic" aria-hidden="true">swap_horiz</span>
+          <span class="mdc-list-item__text --align-self-center">
+            <span class="mdc-list-item__primary-text">送牛牛</span>
+            <span class="mdc-list-item__secondary-text"></span>
+          </span>
+        </a>
+        <a id="menuERC20Buy" class="mdc-list-item" href="#">
+          <span class="material-icons mdc-list-item__graphic" aria-hidden="true">local_atm</span>
+          <span class="mdc-list-item__text --align-self-center">
+            <span class="mdc-list-item__primary-text">用 ERC20 買牛牛</span>
+            <span class="mdc-list-item__secondary-text"></span>
+          </span>
+        </a>
+        <a id="menuSacrifice" class="mdc-list-item" href="#">
+          <span class="material-icons mdc-list-item__graphic" aria-hidden="true">whatshot</span>
+          <span class="mdc-list-item__text">
+              <span class="mdc-list-item__primary-text">獻祭牛牛</span>
+              <span class="mdc-list-item__secondary-text">即將推出</span>
+          </span>
+        </a>
+      </nav>
+
+      <hr class="mdc-list-divider">
+
+      <nav id="navLinks" class="mdc-list mdc-list--avatar-list">
+        <a class="mdc-list-item" href="https://www.facebook.com/cryptocowapp/" target="_blank">
+          <span class="mdc-list-item__graphic" aria-hidden="true"><img src="https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png" width="24"></span><span class="mdc-list-item__text">Facebook 粉專</span>
+        </a>
+        <a class="mdc-list-item" href="https://medium.com/cryptocow" target="_blank">
+          <span class="mdc-list-item__graphic" aria-hidden="true"><img src="https://cdn-images-1.medium.com/fit/c/60/60/1*8I-HPL0bfoIzGied-dzOvA.png" width="24"></span><span class="mdc-list-item__text">Medium</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+</aside>
+
+<div class="mdc-drawer-scrim"></div>
+
+<div style="display: none"><nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list-group">
+    <div class="mdc-list mdc-list--two-line mdc-list--avatar-list">
+
+    </div>
+
+    <hr class="mdc-list-divider">
+
+    <div class="mdc-list mdc-list--avatar-list">
+      <a class="mdc-list-item" href="https://www.facebook.com/cryptocowapp/" target="_blank">
+        <span class="mdc-list-item__graphic" aria-hidden="true"><img src="https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png" width="24"></span><span class="mdc-list-item__text">Facebook 粉專</span>
+      </a>
+      <a class="mdc-list-item" href="https://medium.com/cryptocow" target="_blank">
+        <span class="mdc-list-item__graphic" aria-hidden="true"><img src="https://cdn-images-1.medium.com/fit/c/60/60/1*8I-HPL0bfoIzGied-dzOvA.png" width="24"></span><span class="mdc-list-item__text">Medium</span>
+      </a>
+    </div>
+  </nav></div>
+
+<div id="overlay">
+  <button id="menuButton" class="mdc-icon-button material-icons" autocomplete="off" disabled>menu</button>
+  <div id="osd-bl">
+    <div id="dispContractAddress"><a id="contractAddress" href="#" target="_blank">Contract on Etherscan</a></div>
+  </div>
+
+  <div id="osd-br">
+    <div id="loading-text" class="show-when-loading">Loading...</div>
+    <div id="dispWalletAddress" class="hide-when-loading">Wallet: <span id="walletAddress">...</span></div>
+    <div id="dispTokenBalance" class="hide-when-loading"><span id="tokenBalance">0.00</span> <span id="tokenSymbol">COW</span></div>
+  </div>
+</div>
+
+<aside id="my-mdc-dialog"
+  class="mdc-dialog mdc-dialog--scrollable"
+  role="alertdialog"
+  aria-labelledby="my-mdc-dialog-label"
+  aria-describedby="my-mdc-dialog-description">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface">
+      <h2 class="mdc-dialog__title"><!--
+     -->買牛/賣牛<!--
+   --></h2>
+
+      <section class="mdc-dialog__content">
+        <div id="buyCowFragment" class="mdc-typography--headline5">
+          以
+          <nobr class="--prevent-break">
+            <div class="--buySellEthWrapper mdc-text-field mdc-text-field--box">
+              <input type="text" class="--buySellEthField mdc-text-field__input mdc-typography--headline5" pattern="\d*(\.\d*)?">
+              <div class="mdc-line-ripple"></div>
+            </div>
+            ETH
+          </nobr><br class="break-on-small-screen"><!--
+          --> 買入
+          <nobr class="--prevent-break">
+            <div class="--buySellCowWrapper mdc-text-field mdc-text-field--box mdc-text-field--dense mdc-text-field--with-leading-icon">
+              <span class="material-icons mdc-text-field__icon">lock</span>
+              <input type="text" class="--buySellCowField mdc-text-field__input mdc-typography--headline5" value="0" readonly>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          COW
+          </nobr>
+        </div>
+
+        <div id="sellCowFragment" class="mdc-typography--headline5" style="display: none;">
+          賣出
+          <nobr class="--prevent-break">
+            <div class="--buySellCowWrapper mdc-text-field mdc-text-field--box">
+              <input type="text" class="--buySellCowField mdc-text-field__input mdc-typography--headline5" pattern="\d*(\.\d*)?">
+              <div class="mdc-line-ripple"></div>
+            </div>
+            COW
+          </nobr><br class="break-on-small-screen"><!--
+          -->，獲得
+          <nobr class="--prevent-break">
+            <div class="--buySellEthWrapper mdc-text-field mdc-text-field--box mdc-text-field--dense mdc-text-field--with-leading-icon">
+              <span class="material-icons mdc-text-field__icon">lock</span>
+              <input type="text" class="--buySellEthField mdc-text-field__input mdc-typography--headline5" value="0" readonly>
+              <div class="mdc-line-ripple"></div>
+            </div>
+            ETH
+          </nobr>
+        </div>
+
+        <div style="padding-top: 16px">
+          參考買入價格： 0.1 ETH = <span class="priceBuyInEth">???</span> COW，參考賣出價格： 1 COW = <span class="priceSellInEth">???</span> ETH
+        </div>
+      </section>
+
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-button--_big mdc-typography--body1 mdc-dialog__button" data-mdc-dialog-action="close">關閉</button>
+        <button type="button" class="mdc-button mdc-button--_big mdc-typography--body1 mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="accept" style="font-weight: bold">送出交易</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="mdc-dialog__scrim"></div>
+</aside>
+
+<aside id="my-mdc-dialog2"
+  class="mdc-dialog mdc-dialog--scrollable"
+  role="alertdialog"
+  aria-labelledby="my-mdc-dialog-label"
+  aria-describedby="my-mdc-dialog-description">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface">
+      <h2 class="mdc-dialog__title"><!--
+     -->送牛<!--
+   --></h2>
+
+      <section class="mdc-dialog__content">
+        <div id="transferCowFragment" class="mdc-typography--headline5">
+          將
+          <nobr class="--prevent-break">
+            <div class="--transferCowWrapper mdc-text-field mdc-text-field--box mdc-text-field--dense">
+              <input type="text" class="--transferCowField mdc-text-field__input mdc-typography--headline5" pattern="\d*(\.\d*)?">
+              <div class="mdc-line-ripple"></div>
+            </div>
+            COW
+          </nobr><br class="break-on-small-screen"><!--
+          --> 送給
+          <div class="--transferAddressWrapper mdc-text-field mdc-text-field--with-leading-icon">
+            <span class="material-icons mdc-text-field__icon">account_box</span>
+            <label class="mdc-floating-label">收件人錢包地址</label>
+            <input type="text" class="--transferAddressField mdc-text-field__input mdc-typography--headline5" pattern="0x[0-9a-fA-F]{40}">
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+        <div id="sendLinkHint" class="mdc-typography--subtitle1">
+          <div id="myLinkWrapper" class="mdc-text-field mdc-text-field--outlined">
+            <input type="text" id="myLink" class="mdc-text-field__input" style="padding-right: 0; width: 20rem" readonly>
+            <div class="mdc-notched-outline">
+              <div class="mdc-notched-outline__leading"></div>
+              <div class="mdc-notched-outline__trailing"></div>
+            </div>
+            <button id="copyMyLink" class="mdc-icon-button material-icons" style="margin-top: 4px">file_copy</button>
+          </div>
+          用這個網址讓別人送牛給你<a id="myLink_" style="display:hidden"></a>
+        </div>
+      </section>
+
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-button--_big mdc-typography--body1 mdc-dialog__button" data-mdc-dialog-action="close">關閉</button>
+        <button type="button" class="mdc-button mdc-button--_big mdc-typography--body1 mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="accept" style="font-weight: bold">送出交易</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="mdc-dialog__scrim"></div>
+</aside>
+
+<aside
+  id="mdc-dialog-erc20-buy"
+  class="mdc-dialog mdc-dialog--scrollable "
+  role="alertdialog"
+  aria-labelledby="my-mdc-dialog-label"
+  aria-describedby="my-mdc-dialog-description"
+>
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface">
+      <h2 class="mdc-dialog__title">
+        用 ERC20 買牛牛
+      </h2>
+      <section class="mdc-dialog__content">
+        <div id="erc20BuyCowFragment" class="mdc-typography--headline5">
+          以
+          <nobr class="--prevent-break">
+            <div class="--erc20AmountWrapper mdc-text-field mdc-text-field--box">
+              <input type="text" class="--erc20AmountField mdc-text-field__input mdc-typography--headline5" pattern="\d*(\.\d*)?">
+              <div class="mdc-line-ripple"></div>
+            </div>
+          </nobr>
+          <nobr class="--prevent-break">
+            <div class="--erc20TokenSelect mdc-select">
+              <input type="hidden" name="enhanced-select">
+              <i class="mdc-select__dropdown-icon"></i>
+              <div class="mdc-select__selected-text"></div>
+              <div class="mdc-select__menu mdc-menu mdc-menu-surface width-96">
+                <ul class="mdc-list">
+                  <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true">ERC20</li>
+                </ul>
+              </div>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          </nobr>
+          <br class="break-on-small-screen"><!--
+          --> 買入
+          <nobr class="--prevent-break">
+            <div class="--erc20BuyCowAmountWrapper mdc-text-field mdc-text-field--box mdc-text-field--dense mdc-text-field--with-leading-icon">
+              <span class="material-icons mdc-text-field__icon">lock</span>
+              <input type="text" class="--erc20BuyCowAmountField mdc-text-field__input mdc-typography--headline5" value="0" readonly>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          COW
+          </nobr>
+        </div>
+
+        <div class="--erc20BalanceStatus mdc-typography--subtitle1 mdc-theme--secondary" style="padding-top: 16px; display: none;">
+          你的餘額不夠喔！
+        </div>
+
+        <div class="mdc-typography--subtitle1" style="padding-top: 16px">
+          <button class="--erc20ApproveButton mdc-button mdc-button--raised mdc-typography--body1" style="display: none;">
+            解鎖
+            <span class="--erc20TokenName">...</span>
+          </button>
+          <div class="--erc20ApproveStatus mdc-typography--body1">
+            Pending...
+            <img src="assets/spinner.gif">
+          </div>
+        </div>
+      </section>
+
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-button--_big mdc-typography--body1 mdc-dialog__button" data-mdc-dialog-action="close">關閉</button>
+        <button type="button" class="--erc20BuyButton mdc-button mdc-button--_big mdc-typography--body1 mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="accept" style="font-weight: bold" disabled>送出交易</button>
+      </footer>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</aside>
+
+<aside id="my-mdc-dialog-prompt-sign"
+  class="mdc-dialog"
+  role="alertdialog"
+  aria-labelledby="my-mdc-dialog-label"
+  aria-describedby="my-mdc-dialog-description">
+  <div class="mdc-dialog__surface">
+    <header class="mdc-dialog__header">
+      <h3 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
+        確認
+      </h3>
+    </header>
+    <section id="my-mdc-dialog-description" class="mdc-dialog__body">
+      請在 MetaMask 中按簽署 (Sign / Confirm)，確認交易
+    </section>
+  </div>
+  <div class="mdc-dialog__backdrop"></div>
+</aside>
+
+<div id="my-mdc-snackbar"
+     class="mdc-snackbar mdc-snackbar--align-start"
+     aria-live="assertive"
+     aria-atomic="true"
+     aria-hidden="true">
+  <div class="mdc-snackbar__text"></div>
+  <div class="mdc-snackbar__action-wrapper">
+    <button type="button" class="mdc-snackbar__action-button"></button>
+  </div>
+</div>
+
+<script src="dist/app.js"></script>
+</body>
+</html>
