@@ -115,16 +115,16 @@ function setupMainScreen() {
       }
     })
     .then(([netId, netName]) => {
-      if (netId != 1) {  // main net
-        let richText = new PIXI.Text(`The contract is deployed on main net.\nPlease switch the network and refresh.`, textStyleFatal);
+      // if (netId != 1) {  // main net
+      //   let richText = new PIXI.Text(`The contract is deployed on main net.\nPlease switch the network and refresh.`, textStyleFatal);
 
-        richText.x = app.screen.width / 2;
-        richText.y = app.screen.height / 2;
-        richText.anchor.set(0.5);
-        app.stage.addChild(richText);
+      //   richText.x = app.screen.width / 2;
+      //   richText.y = app.screen.height / 2;
+      //   richText.anchor.set(0.5);
+      //   app.stage.addChild(richText);
 
-        return Promise.reject(null);
-      }
+      //   return Promise.reject(null);
+      // }
 
       return web3.eth.getAccounts()
       .then(accList_ => {

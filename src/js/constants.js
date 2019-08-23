@@ -1,7 +1,7 @@
-export const addrContract = '0xFDb0065240753FEF4880a9CC7876be59E09D78BB';
-export const cowSwapAddress = "0x84F84667dcD56091F289466A7dc0e2620b562e24";
+export const addrContract = '0x7e81081c45ebf2fade91de90d7c180f1edfcf534';
+export const cowSwapAddress = "0x14173d48b1602bb686f33cd40b4ca66535b980b2";
 
-export const etherscanDomain = 'etherscan.io';
+export const etherscanDomain = 'ropsten.etherscan.io';
 export const biggestNumber = '115792089237316195423570985008687907853269984665640564039457584007913129639935';
 
 const NAME = 'name'
